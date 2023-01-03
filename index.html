@@ -5,18 +5,26 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Serfrontend</title>
+    <title>Serliv Cursos on-line</title>
 
     <style>
+        :root {
+            --primary-color: #EE3231;
+            --secondary-color: #7f7f7f;
+        }
+
+
+
         body {
-            margin: 0;
+            margin: 0 1rem;
             background-image: linear-gradient(transparent, #070508 70%), url(./images/space.jpg);
             background-position: top center;
-
+            font-size: 80%;
             background-size: cover;
             background-repeat: repeat-x;
+            background-color: black;
             min-height: 100vh;
-            color: white;
+            color: var(--secondary-color);
             display: flex;
             justify-content: center;
             align-items: center;
@@ -29,26 +37,152 @@
         @media screen and (min-width: 31.25em) {
             body {
                 background-size: contain;
+                font-size: 100%;
             }
         }
 
         img {
-            width: 80%;
+            width: 60%;
             max-width: 100%;
 
         }
 
         p {
-            font-size: 1.5em;
+            /* font-size: 1.5em; */
+            text-align: center;
+            max-width: 30rem;
+            margin: .2rem 0;
+        }
+
+        p a {
+            color: inherit;
+        }
+
+        .highlight {
+            font-size: 1.125rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        .highlight-gradient {
+            background: -webkit-linear-gradient(90deg, #232323 0%, #ffffff 100%);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .highlight-big {
+            font-size: 1.35em;
+        }
+
+        .social {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .social a {
+            display: block;
+            opacity: .6;
+            transition: opacity .3s;
+        }
+
+        .social a:hover {
+            opacity: .9;
+        }
+
+        .hidden {
+            border: 0;
+            clip: rect(0 0 0 0);
+            height: 1px;
+            margin: -1px;
+            overflow: hidden;
+            padding: 0;
+            position: absolute;
+            width: 1px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: .75em 1.25em;
+            background-color: var(--primary-color);
+            border-radius: 4px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: white;
+            text-decoration: none;
+            transition: all .5s;
+            text-align: center;
+        }
+
+        .btn:hover {
+            background-color: transparent;
+            box-shadow: 0 0 0 2px var(--primary-color);
+        }
+
+        .margin-top-xl {
+            margin-top: 3.75rem;
         }
     </style>
 </head>
 
 <body>
 
-    <img src="./images/logo-serfrontend-vertical-bgBlack-04.svg" alt="Logotipo Serfrontend" height="120">
+    <!-- <img src="./images/logo-serfrontend-vertical-bgBlack-04.svg" alt="Logotipo Serfrontend" height="60"> -->
 
-    <p>Aguarde ...</p>
+    <p class="highlight">Serfrontend agora é</p>
+
+    <img src="./images/logo-serliv.svg" alt="Logotipo serliv" height="100">
+    <p class="highlight highlight-big highlight-gradient">Só o conhecimento liberta</p>
+
+    <p class="margin-top-xl">Mas por enquanto você pode continuar navegando
+        no site <a href="https://serfrontend.com">serfrontend.com</a> ou visitar nossas redes sociais: </p>
+
+    <ul class="social">
+        <li>
+            <a href="https://www.youtube.com/@serliv" title="Visite a serliv no Youtube">
+                <span class="icon" aria-hidden="true">
+                    <img src="./images/youtube.svg" alt="Logotipo Facebook" height="32">
+                </span>
+                <span class="hidden" aria-hidden="false"> serliv - Youtube</span></a>
+        </li>
+        <li>
+            <a href="https://www.instagram.com/serlivcursos/">
+                <span class="icon" aria-hidden="true">
+                    <img src="./images/instagram.svg" alt="Logotipo Facebook" height="32">
+                </span>
+                <span class="hidden" aria-hidden="false"> serlivcursos - Instagram</span></a>
+        </li>
+        <li>
+            <a href="https://twitter.com/serlivcursos">
+                <span class="icon" aria-hidden="true">
+                    <img src="./images/twitter.svg" alt="Logotipo Facebook" height="32">
+                </span>
+                <span class="hidden" aria-hidden="false"> serlivcursos - Twitter</span></a>
+        </li>
+        <li>
+            <a href="http://www.linkedin.com/in/serliv">
+                <span class="icon" aria-hidden="true">
+                    <img src="./images/linkedin.svg" alt="Logotipo Facebook" height="32">
+                </span>
+                <span class="hidden" aria-hidden="false"> serlivcursos - Linkedin</span></a>
+        </li>
+
+        <li>
+            <a href="https://www.facebook.com/serliv">
+                <span class="icon" aria-hidden="true">
+                    <img src="./images/facebook2.svg" alt="Logotipo Facebook" height="32">
+                </span>
+                <span class="hidden" aria-hidden="false"> serlivcursos - Facebook</span></a>
+        </li>
+
+    </ul>
+
+    <a href="https://serfrontend.com" class="btn">Continuar em serfrontend.com</a>
+
+
 
 </body>
 

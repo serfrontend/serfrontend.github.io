@@ -69,11 +69,16 @@ li {
     padding: 5.25rem 0;
 }
 
-.hero-section .btn-primary {
+/* .hero-section .btn-primary {
     display: block;
     width: fit-content;
     margin: auto;
-
+} */
+.hero-cta {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
 }
 
 .hero-img {
@@ -101,15 +106,24 @@ li {
     max-width: 100%;
 }
 
-.btn-primary {
-    display: inline-block;
+.btn-primary,
+.btn-secondary {
     padding: 0.75rem 1.5rem;
     font-size: 1rem;
-    color: var(--primary-color-negative);
-    background-color: var(--primary-color);
     text-decoration: none;
     border-radius: 5px;
     transition: background-color 0.3s;
+}
+
+.btn-primary {
+    /* display: inline-block; */
+    color: var(--primary-color-negative);
+    background-color: var(--primary-color);
+}
+
+.btn-secondary {
+    /* display: inline-block; */
+    color: var(--primary-color);
 }
 
 .btn-primary:hover {
@@ -292,13 +306,14 @@ details p {
         flex-direction: row;
     }
 
-    .hero-section .btn-primary {
+    /* .hero-section .btn-primary {
         margin: 0 0 0 auto;
-    }
+    } */
 
-    .hero-content a {
-        font-size: 1.25rem;
-    }
+
+    /* .hero-content a {
+        font-size: 1.1rem;
+    } */
 
     .cards-grid {
         flex-direction: row;
@@ -319,5 +334,11 @@ details p {
 
     .garantia .container-content p {
         width: 50%;
+    }
+}
+
+@media (width > 1080px) {
+    .hero-cta {
+        flex-direction: row;
     }
 }

@@ -69,11 +69,12 @@ li {
     padding: 5.25rem 0;
 }
 
-/* .hero-section .btn-primary {
+.hero-section .btn-primary {
     display: block;
     width: fit-content;
     margin: auto;
-} */
+}
+
 .hero-cta {
     display: flex;
     flex-direction: column;
@@ -83,7 +84,7 @@ li {
 
 .hero-img {
     background-color: #e5e5e5aa;
-    border-radius: .75rem;
+    border-radius: .25rem;
     align-content: center;
     padding: 1rem;
 }
@@ -111,7 +112,7 @@ li {
     padding: 0.75rem 1.5rem;
     font-size: 1rem;
     text-decoration: none;
-    border-radius: 5px;
+    border-radius: .25rem;
     transition: background-color 0.3s;
 }
 
@@ -151,7 +152,7 @@ li {
     flex: 1;
     min-width: 18.75rem;
     background-color: #313131aa;
-    border-radius: .75rem;
+    border-radius: .25rem;
     align-content: center;
     padding: 1rem;
     text-align: center;
@@ -205,7 +206,9 @@ li {
     text-align: left;
 }
 
-
+.beneficios h2 {
+    margin-bottom: 2rem;
+}
 
 .beneficios ul li {
     margin-bottom: 0.5rem;
@@ -217,8 +220,13 @@ li {
     font-size: 1.2rem;
 }
 
-.preco>* {
+/* .preco>* {
     display: block;
+} */
+.preco {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .preco-reais {
@@ -227,6 +235,7 @@ li {
     font-weight: bold;
     color: var(--primary-color);
     font-family: "Saira Extra Condensed", serif;
+    line-height: 1.5;
 }
 
 .preco-reais span {
@@ -248,7 +257,7 @@ li {
 details {
     margin-bottom: 1rem;
     padding: 1rem;
-    border-radius: 5px;
+    border-radius: .25rem;
 }
 
 details summary {
@@ -265,6 +274,10 @@ details p {
 /* Autor Section */
 .autor {
     padding: 2rem 0;
+}
+
+.autor .container-content {
+    text-align: left;
 }
 
 .autor span {
@@ -306,14 +319,21 @@ details p {
         flex-direction: row;
     }
 
-    /* .hero-section .btn-primary {
+    .hero-section .btn-primary {
         margin: 0 0 0 auto;
-    } */
+    }
 
+    .hero-cta .btn-primary {
+        margin: 0;
+    }
 
-    /* .hero-content a {
-        font-size: 1.1rem;
-    } */
+    .hero-content a {
+        font-size: 1.25rem;
+    }
+
+    .hero-cta a {
+        font-size: 1rem;
+    }
 
     .cards-grid {
         flex-direction: row;

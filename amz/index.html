@@ -24,23 +24,23 @@
         }
 
         h1 {
-            margin-bottom: 20px;
+            margin-bottom: 1.5rem;
             color: #333;
         }
 
         .container {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 20px;
-            max-width: 1000px;
+            grid-template-columns: repeat(auto-fit, minmax(17.5rem, 1fr));
+            gap: 1.5rem;
+            max-width: 60rem;
             margin: auto;
         }
 
         .card {
             background: #fff;
-            padding: 15px;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 1rem;
+            border-radius: .5rem;
+            box-shadow: 0 .25rem .5rem rgba(0, 0, 0, 0.1);
             text-align: left;
             display: flex;
             flex-direction: column;
@@ -49,19 +49,19 @@
 
         .card img {
             width: 100%;
-            border-radius: 5px;
+            border-radius: .25rem;
         }
 
         .card h2 {
-            font-size: 18px;
-            margin: 10px 0;
+            font-size: 1.25rem;
+            margin: .5rem 0;
             color: #222;
         }
 
         .card p {
-            font-size: 14px;
+            font-size: 1.25rem;
             color: #555;
-            margin-bottom: 10px;
+            margin-bottom: 1rem;
         }
 
         .card a {
@@ -69,14 +69,25 @@
             text-decoration: none;
             background: #ff9900;
             color: #fff;
-            padding: 10px;
-            border-radius: 5px;
+            padding: 1rem;
+            border-radius: .25rem;
             font-weight: bold;
             margin-block: auto 0;
         }
 
         .card a:hover {
             background: #e68900;
+        }
+
+        .link-amz-mais-produtos {
+            text-decoration: none;
+            color: #fff;
+            padding: 1rem;
+            border-radius: .25rem;
+            font-weight: bold;
+            margin-block: 1rem;
+            grid-column: 1 / -1;
+            align-items: center;
         }
     </style>
 </head>
@@ -108,6 +119,13 @@
             <a href="https://amzn.to/4iS7f8V" target="_blank">Comprar na Amazon</a>
         </article>
 
+
+
+        <article class="card link-amz-mais-produtos">
+            <a href="https://amzn.to/3FByRkq">Veja mais Produdos em promoção na Semana do
+                Consumidor</a>
+        </article>
+
         <article class="card">
             <img src="https://m.media-amazon.com/images/I/71X7hMhMEUL._SY425_.jpg"
                 alt="Lógica de Programação e Algoritmos com JavaScript">
@@ -132,6 +150,8 @@
             <a href="https://amzn.to/4iVaHzH" target="_blank">Comprar na Amazon</a>
         </article>
     </section>
+
+
 </body>
 
 </html>

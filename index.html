@@ -3,188 +3,481 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Serliv Cursos on-line</title>
+    <title>Serliv: Cursos e E-books de Programação Front-end</title>
+    <meta name="description"
+        content="Aprenda programação Front-end com os melhores cursos e e-books da Serliv. Domine HTML, CSS, JavaScript e Figma. Comece sua jornada agora!">
+    <meta name="keywords"
+        content="programação front-end, cursos front-end, e-books programação, HTML, CSS, JavaScript, Figma, desenvolvimento web, Serliv">
+    <meta name="author" content="Serliv">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://serliv.com/index.html">
 
-    <style>
-        :root {
-            --primary-color: #EE3231;
-            --secondary-color: #7f7f7f;
-        }
+    <meta property="og:title" content="Serliv: Cursos e E-books de Programação Front-end">
+    <meta property="og:description"
+        content="Aprenda programação Front-end com os melhores cursos e e-books da Serliv. Domine HTML, CSS, JavaScript e Figma. Comece sua jornada agora!">
+    <meta property="og:image" content="/images/serliv-og-image.png">
+    <meta property="og:url" content="https://serliv.com/index.html">
+    <meta property="og:type" content="website">
 
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
 
-        body {
-            margin: 0 1rem;
-            background-image: linear-gradient(transparent, #070508 70%), url(./images/space.jpg);
-            background-position: top center;
-            font-size: 80%;
-            background-size: cover;
-            background-repeat: repeat-x;
-            background-color: black;
-            min-height: 100vh;
-            color: var(--secondary-color);
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-flow: column nowrap;
-            gap: 2rem;
-            font-family: 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
-
-        }
-
-        @media screen and (min-width: 31.25em) {
-            body {
-                background-size: contain;
-                font-size: 100%;
-            }
-        }
-
-        img {
-            width: 60%;
-            max-width: 100%;
-
-        }
-
-        p {
-            /* font-size: 1.5em; */
-            text-align: center;
-            max-width: 30rem;
-            margin: .2rem 0;
-        }
-
-        p a {
-            color: inherit;
-        }
-
-        .highlight {
-            font-size: 1.125rem;
-            text-transform: uppercase;
-            letter-spacing: 2px;
-        }
-
-        .highlight-gradient {
-            background: -webkit-linear-gradient(90deg, #232323 0%, #ffffff 100%);
-            -webkit-background-clip: text;
-            background-clip: text;
-            -webkit-text-fill-color: transparent;
-        }
-
-        .highlight-big {
-            font-size: 1.35em;
-        }
-
-        .social {
-            display: flex;
-            justify-content: center;
-            list-style: none;
-            padding: 0;
-            margin: 0;
-        }
-
-        .social a {
-            display: block;
-            opacity: .6;
-            transition: opacity .3s;
-        }
-
-        .social a:hover {
-            opacity: .9;
-        }
-
-        .hidden {
-            border: 0;
-            clip: rect(0 0 0 0);
-            height: 1px;
-            margin: -1px;
-            overflow: hidden;
-            padding: 0;
-            position: absolute;
-            width: 1px;
-        }
-
-        .btn {
-            display: inline-block;
-            padding: .75em 1.25em;
-            background-color: var(--primary-color);
-            border-radius: 4px;
-            text-transform: uppercase;
-            letter-spacing: 2px;
-            color: white;
-            text-decoration: none;
-            transition: all .5s;
-            text-align: center;
-        }
-
-        .btn:hover {
-            background-color: transparent;
-            box-shadow: 0 0 0 2px var(--primary-color);
-        }
-
-        .margin-top-xl {
-            margin-top: 3.75rem;
-        }
-    </style>
+    <link rel="stylesheet" href="styles/estilo.css">
 
     <link rel="icon" href="/favicon.svg" type="image/svg+xml">
 </head>
 
-<body>
+<body class="no-js" id="topo">
 
-    <!-- <img src="./images/logo-serfrontend-vertical-bgBlack-04.svg" alt="Logotipo Serfrontend" height="60"> -->
+    <div class="logoicon md-hide">
+        <div class="logoicon__logo"><a href="#"><img src="images/logo-serliv.svg" alt="Serliv Logotipo"></a></div>
 
-    <p class="highlight">Serfrontend agora é</p>
+        <a href="#" aria-hidden="true" role="button" tabIndex='-1'>
+            <img src="images/menu-icon.svg" alt="menu icon" tabIndex='-1'>
+        </a>
+    </div>
 
-    <img src="./images/logo-serliv.svg" alt="Logotipo serliv" height="100">
-    <p class="highlight highlight-big highlight-gradient">Só o conhecimento liberta</p>
+    <header class="header">
+        <div class="container">
 
-    <p class="margin-top-xl">Mas por enquanto você pode continuar navegando
-        no site <a href="https://serfrontend.com">serfrontend.com</a> ou visitar nossas redes sociais: </p>
+            <div class="logoicon__logo sm-hide md-show"><a href="#"><img src="images/logo-serliv.svg"
+                        alt="Serliv Logotipo"></a></div>
 
-    <ul class="social">
-        <li>
-            <a href="https://www.youtube.com/@serliv" title="Visite a serliv no Youtube">
-                <span class="icon" aria-hidden="true">
-                    <img src="./images/youtube.svg" alt="Logotipo Facebook" height="32">
-                </span>
-                <span class="hidden" aria-hidden="false"> serliv - Youtube</span></a>
-        </li>
-        <li>
-            <a href="https://www.instagram.com/serlivcursos/">
-                <span class="icon" aria-hidden="true">
-                    <img src="./images/instagram.svg" alt="Logotipo Facebook" height="32">
-                </span>
-                <span class="hidden" aria-hidden="false"> serlivcursos - Instagram</span></a>
-        </li>
-        <li>
-            <a href="https://twitter.com/serlivcursos">
-                <span class="icon" aria-hidden="true">
-                    <img src="./images/twitter.svg" alt="Logotipo Facebook" height="32">
-                </span>
-                <span class="hidden" aria-hidden="false"> serlivcursos - Twitter</span></a>
-        </li>
-        <li>
-            <a href="http://www.linkedin.com/in/serliv">
-                <span class="icon" aria-hidden="true">
-                    <img src="./images/linkedin.svg" alt="Logotipo Facebook" height="32">
-                </span>
-                <span class="hidden" aria-hidden="false"> serlivcursos - Linkedin</span></a>
-        </li>
+            <nav class="nav-menu">
+                <ul>
+                    <li><a href="#courses">Cursos Serliv</a></li>
+                    <li><a href="#ebooks">E-books Serliv</a></li>
+                    <li><a href="#amazon">Produtos Recomendados</a></li>
+                    <li><a href="#channels">Siga-nos em nossos Canais</a></li>
+                    <li><a href="#socialmedia">Contatos</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
-        <li>
-            <a href="https://www.facebook.com/serlivcursos/">
-                <span class="icon" aria-hidden="true">
-                    <img src="./images/facebook2.svg" alt="Logotipo Facebook" height="32">
-                </span>
-                <span class="hidden" aria-hidden="false"> serlivcursos - Facebook</span></a>
-        </li>
+    <main>
 
-    </ul>
+        <section class="hero">
+            <div class="container container-max-width">
+                <h1 class="hero__title">O Melhor Lugar para iniciar sua jornada na <span
+                        class="hero__title--upper">Programação <span class="no-wrap">Front-end</span></span></h1>
+                <div><a href="#courses" class="btn hero__cta">Conheça nossos cursos</a></div>
+            </div>
+        </section>
 
-    <a href="https://serfrontend.com" class="btn">Continuar em serfrontend.com</a>
+        <section class="courses container container-max-width" id="courses">
+            <div class="courses__title">
+                <h2 class="h2">Os Melhores Cursos <span class="title--thin"> Você Encontra Aqui</span></h2>
+            </div>
+            <div class="courses__list">
+                <article class="courses__card">
+                    <img src="images/cursos/curso-web-fundamentos.png" alt="" class="courses__card__img">
+
+                    <div class="courses__card__content">
+                        <h3 class="h3">Web Fundamentos Front-end <span class="title--thin">HTML + CSS +
+                                Javascript</span> </h3>
+                        <p>Crie seus sites na internet. Aqui você irá aprender DE VERDADE o HTML e CSS e terá uma base
+                            do Javascript.</p>
+
+                        <div class="courses__card__ctas">
+                            <a href="https://www.udemy.com/course/curso-web-design-fundamentos-aprenda-html-css-e-javascript/?referralCode=B36B674DD7452AB44C7A&couponCode=CP-DESC-20250228"
+                                class="btn btn--stroke">Ver Conteúdo</a>
+                            <a href="https://www.udemy.com/course/curso-web-design-fundamentos-aprenda-html-css-e-javascript/?referralCode=B36B674DD7452AB44C7A&couponCode=CP-DESC-20250228"
+                                class="btn">Quero Comprar</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="courses__card">
+                    <img src="images/cursos/curso-figma-html-css.png" alt="" class="courses__card__img">
+
+                    <div class="courses__card__content">
+
+                        <h3 class="h3">Do Figma ao código HTML e CSS <span class="title--thin">O Design de Interfaces
+                                web
+                                completo</span>
+                        </h3>
+                        <p>Construa Interfaces de usuários INCRÍVEIS com o FIGMA e transforme tudo em páginas na web com
+                            HTML e CSS</p>
+                        <div class="courses__card__ctas">
+                            <a href="https://www.udemy.com/course/curso-do-figma-ao-codigo-o-design-da-interface-web-completo/?referralCode=AA0F15781CD612D52A6D&couponCode=CP-DESC-20250228"
+                                class="btn btn--stroke">Ver Conteúdo</a>
+                            <a href="https://www.udemy.com/course/curso-do-figma-ao-codigo-o-design-da-interface-web-completo/?referralCode=AA0F15781CD612D52A6D&couponCode=CP-DESC-20250228"
+                                class="btn">Quero Comprar</a>
+                        </div>
+                    </div>
+                </article>
+                <article class="courses__card">
+                    <img src="images/cursos/curso-logica-javascript.png" alt="" class="courses__card__img">
+
+                    <div class="courses__card__content">
+                        <h3></h3>
+                        <p></p>
+                        <h3 class="h3">Lógica de Programação com JavaScript <span class="title--thin">com Fundamentos de
+                                Estrutura de Dados</span>
+                        </h3>
+                        <p>Dicas e macetes para dominar o CSS e evitar aqueles resultados indesejados na renderização da
+                            sua página</p>
+                        <div class="courses__card__ctas">
+                            <a href="https://www.udemy.com/course/logica-de-programacao-com-javascript-iniciando-no-frontend/?referralCode=90E65511BF3E1196B084&couponCode=CP-DESC-20250228"
+                                class="btn btn--stroke">Ver Conteúdo</a>
+                            <a href="https://www.udemy.com/course/logica-de-programacao-com-javascript-iniciando-no-frontend/?referralCode=90E65511BF3E1196B084&couponCode=CP-DESC-20250228"
+                                class="btn">Quero Comprar</a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="testimonials">
+            <div class="container">
+                <h2 class="h2">Alguns Depoimentos <span class="title--thin">O que andam falando da gente por aí</span>
+                </h2>
+            </div>
+
+            <section class="testimonials__carousel">
+                <div class="testimonials__carousel__wrapper" tabindex="-1">
+                    <img loading="lazy" src="images/depoimentos/depoimento01.png"
+                        alt="Thais Medeiros - Estou amando o nivel de detalhes da explicagao do contetido pelo
+                    professor Daniel. Além disso, ele é super agil em responder duvidas e as responde com exceléncia. Recomendo!">
+                    <img loading="lazy" src="images/depoimentos/depoimento02.png" alt="Joao Gabriel - conteudo extremamente direto ao ponto e super explicativo! ja consegui                         aprender e botar muita coisa em pratica. comecei sem saber nada sobre
+                        desenvolvimento web ou programagao, ainda estou no segundo médulo do curso, mas com a base do meu site praticamente pronta. recomendo
+                        demais!">
+                    <img loading="lazy" src="images/depoimentos/depoimento03.png" alt="Daniel Augusto Brito de Carvalho - Muito informativo e bem explicado, a forma de linguagem utilizada
+                    pelo instrutor é para pessoas que nao sabem programar, para pessoas que nao entendem do assunto, nenhum termo técnico é utilizado sem
+                    que ele explique o que é 0 termo utilizado.">
+                    <img loading="lazy" src="images/depoimentos/depoimento04.png" alt="Aleandro Souza Silva - De cursos que ja fiz aqui, esse esta sendo um dos melhores, a didatica do
+                        curso é excelente, realmente nao imaginava que eu iria entender bastante
+                        conteudo em tao pouco tempo de estudo.show">
+                    <img loading="lazy" src="images/depoimentos/depoimento05.png" alt="Jos Carlos Dos Santos - O professor tem uma otima didatica para ensinar, quem nao aprender com ele
+                    nao aprende com mais ninguém, pois ele explica tudo de forma minuciosa e não basta assistir e fazer o curso uma Unica vez , faga e refaga tudo do zero até
+                    aprender ! vocé compreender nao significa que vocé aprendeu !! Otimo curso por
+                    um valor insignificante que sorte os jovens de hoje em dia tem">
+                    <img loading="lazy" src="images/depoimentos/depoimento06.png" alt="Danilo Cesar Do Prado - Para quem nao sabe nada (tipo eu) estou achando bom, mas légico
+                        que assistindo, fazendo os exercicios propostos em aula e tento fazer
+                        alguns extras fora do curso">
+                    <img loading="lazy" src="images/depoimentos/depoimento07.png" alt="Aleandro Souza Silva - De cursos que ja fiz aqui, esse esta sendo um dos melhores, a didatica do
+                    curso é excelente, realmente nao imaginava que eu iria entender bastante
+                    conteudo em tao pouco tempo de estudo.show">
+                    <img loading="lazy" src="images/depoimentos/depoimento08.png" alt="Jhone Silva Osorio - Eu nunca imaginei, que seria tao gratificante estudar programagao, esta
+                        sendo uma experiéncia extraordinaria.">
+                </div>
+            </section>
+        </section>
+
+        <section class="books container container-max-width" id="ebooks">
+            <h2 class="h2">E-books da Serliv <span class="title--thin"> Livros digitais para você se especializar ainda
+                    mais</span></h2>
+
+            <div class="books__list">
+                <article class="books__card">
+
+                    <img src="images/livros/melhorias-js.png" srcset="
+    images/livros/melhorias-js.png 199w,
+    images/livros/melhorias-js-4x.png 794w" sizes="(min-width: 64rem) 49rem, 12.43rem" alt="" class="books__card__img"
+                        loading="lazy" />
 
 
+                    <div class="books__card__content">
+                        <h3 class="h3">Melhores Práticas Javascript <span class="title--thin"> O guia essencial para
+                                quem busca excelência na programação</span></h3>
+                        <h4 class="books__card__price">R$ 22,90</h4>
+                        <p>Eleve o seu código para outro patamar e melhore significativamente a qualidade do o seu
+                            código. Aprenda com exemplos práticos e veja as vantagens e os benefícios de aplicar as
+                            melhores práticas de programação com Javascript</p>
+
+                        <div class="books__card__ctas">
+                            <a href="https://drive.google.com/file/d/1xcwOqrZ287QyJivQ5qEngwfHOlJfB3HP/view?usp=sharing"
+                                class="btn btn--ghost">Ver Demonstração</a>
+                            <a href="melhores-praticas-js/" class="btn btn--stroke" target="_blank">Saiba mais</a>
+                            <a href="https://pay.hotmart.com/W97225734H" class="btn">Comprar Agora</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="books__card">
+
+                    <img src="images/livros/refatoracao-js.png" srcset="
+    images/livros/refatoracao-js.png 195w,
+    images/livros/refatoracao-js-4x.png 776w" sizes="(min-width: 64rem) 49rem, 12.43rem" alt=""
+                        class="books__card__img" loading="lazy" />
+
+                    <div class="books__card__content">
+                        <h3 class="h3">50 Dicas de Refatoração com Javascript <span class="title--thin"> Descubra o
+                                segredo dos programadores experientes</span></h3>
+                        <h4 class="books__card__price">R$ 14,90</h4>
+                        <p>Eleve o seu código para outro patamar e melhore significativamente a qualidade do o seu
+                            código. Aprenda com exemplos práticos e veja as vantagens e os benefícios de aplicar as
+                            técnicas de refatoração apresentadas neste livro</p>
+
+                        <div class="books__card__ctas">
+                            <a href="https://drive.google.com/file/d/1yuLJ37psCx1CjL-WnVVq5V2GzcNn3WhU/view?usp=sharing"
+                                class="btn btn--ghost">Ver Demonstração</a>
+                            <a href="livro-refatoracao-javascript/" class="btn btn--stroke" target="_blank">Saiba
+                                mais</a>
+                            <a href="https://pay.hotmart.com/B92973901Y" class="btn">Comprar Agora</a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+
+        </section>
+
+        <section class="news">
+            <div id="channels"></div>
+            <h2 class="h2">Não perca as Novidades Serliv <span class="title--thin">Atualizações, Promoções, Links
+                    Interessantes, Vídeos novos no canal. Saiba tudo em primeira mão.</span></h2>
+            <div class="news__content">
+                <p class="news__disclaimer sm-sr-only">Escolha seu app <br> preferido</p>
+                <img src="images/news-seta.svg" alt="" class="sm-hide md-show">
+                <div class="news__whatsapp news_icon_btn">
+                    <img src="images/whatsapp.svg" alt="Whatsapp logo">
+                    <span class="sm-sr-only">Whatsapp</span>
+                </div>
+                <div class="news__Telegram news_icon_btn">
+                    <img src="images/Telegram.svg" alt="Telegram logo">
+                    <span class="sm-sr-only">Telegram</span>
+                </div>
+
+                <a href="news/" class="btn" target="_blank">Saiba mais</a>
+            </div>
+
+        </section>
+
+        <section class="books-others" id="amazon">
+            <div class="container container-max-width">
+                <h2 class="h2">Livros que amamos <span class="title--thin">Produtos de qualidade que podem ser
+                        adquiridos na Amazon</span></h2>
+
+            </div>
+            <div class="books-others__carousel" data-carousel-indicators="book-others-indicators">
+                <button class="carousel-btn prev sm-hide lg-show" data-carousel-prev>
+                    <img src="images/arrow-carousel.png" alt="seta icon carrossel">
+                </button>
+                <div class="books-others__wrapper" data-carousel-wrapper>
+                    <article class="books-others__card" data-carousel-items>
+                        <img loading="lazy" src="images/livros/nao-me-faca-pensar.png"
+                            alt="capa do livro não me faça pensar - Steve Krug" class="books-others__card__img">
+
+                        <div class="books-others__card__content">
+                            <h3 class="h3">Não me faça pensar </h3>
+                            <p>por <strong>Steve Krug</strong></p>
+                            <div class="books__card__description sm-sr-only">
+                                <p>
+                                    Dê um basta aos problemas de usabilidade!Clássico do autor Steve Krug ganha nova
+                                    edição pela Alta Books.</p>
+                                <p>
+                                    Quantas vezes você se sentiu perdido em um site? Quantas outras falhou ao tentar
+                                    entender como funcionava um aplicativo? Na maioria das vezes, a culpa não é sua.
+                                    Muitos são os sites ou aplicativos com falhas de desenvolvimento que dificultam
+                                    sua compreensão e uso. Profissionais de usabilidade estão aí para assegurar que
+                                    isso não aconteça, indo na raiz do problema, identificando através de testes os
+                                    pontos em que os usuários "travam" e propondo soluções.</p>
+                                <p>
+                                    Steve Krug trabalha como consultor de usabilidade desde os tempos da conexão
+                                    discada. Sua experiência no comando da Advanced Common Sense o levou a escrever
+                                    um livro. Não Me Faça Pensar foi lançado em 2002 e até hoje é mencionado quando
+                                    o assunto são publicações de informática que fizeram história. O passar dos anos
+                                    e o desenvolvimento de novas tecnologias levaria Krug a atualizar a obra. A
+                                    segunda edição de Não Me Faça Pensar veria a luz do dia em 2008.
+                                </p>
+                            </div>
+                            <a href="https://amzn.to/4igrq0H" class="btn">Comprar Agora</a>
+                        </div>
+                    </article>
+
+                    <article class="books-others__card" data-carousel-items>
+                        <img loading="lazy" src="images/livros/design_pra_nao_designer.jpg"
+                            alt="capa do livro Design para quem não é Designer - Robin Williams"
+                            class="books-others__card__img">
+
+                        <div class="books-others__card__content">
+                            <h3 class="h3">Design para quem não é Designer</h3>
+                            <p>por <strong>Robin Williams</strong></p>
+                            <div class="books__card__description sm-sr-only">
+                                <p>
+                                    Princípios de design e tipografia para iniciantes.</p>
+                                <p>
+                                    Robin Williams, de maneira clara e didática, ensina que qualquer pessoa pode
+                                    elaborar páginas com uma estética melhor. Por ser um livro de design para leigos, a
+                                    autora dá dicas e ensina truques para as mais variadas situações do dia a dia, que
+                                    vão desde a elaboração de um simples panfleto até a elaboração de um jornal.</p>
+
+                            </div>
+                            <a href="https://amzn.to/4hF5j2V" class="btn">Comprar Agora</a>
+                        </div>
+                    </article>
+
+                    <article class="books-others__card" data-carousel-items>
+                        <img loading="lazy" src="images/livros/psicologia-das-cores.jpg"
+                            alt="capa do livro A psicologia das cores: Como as cores afetam a emoção e a razão - Eva Heller"
+                            class="books-others__card__img">
+
+                        <div class="books-others__card__content">
+                            <h3 class="h3">A psicologia das cores </h3>
+                            <p>por <strong>Eva Heller</strong></p>
+                            <div class="books__card__description sm-sr-only">
+                                <p>
+                                    Como as cores afetam a emoção e a razão.</p>
+                                <p>
+                                    Este livro aborda a relação das cores com os nossos sentimentos e mostra como as
+                                    duas coisas não se combinam por acaso, já que as relações entre ambas não são apenas
+                                    questões de gosto, mas sim experiências universais profundamente enraizadas na nossa
+                                    linguagem e no nosso pensamento. </p>
+                                <p>
+                                    Organizada em treze capítulos, correspondentes a
+                                    treze cores diferentes, a obra oferece um rico painel de informações sobre as cores:
+                                    de ditados e saberes populares até sua utilização na área de design de produto, os
+                                    diversos testes baseados em cores, as terapias cromáticas, a manipulação de pessoas,
+                                    os nomes e sobrenomes relacionados com as cores etc. A diversidade desta abordagem
+                                    faz do trabalho de Eva Heller uma ferramenta indispensável para todos os que
+                                    trabalham com cores: artistas, terapeutas, designers gráficos e industriais,
+                                    decoradores, arquitetos, designers de moda, publicitários, entre outros.
+                                </p>
+                            </div>
+                            <a href="https://amzn.to/420UWkb" class="btn">Comprar Agora</a>
+                        </div>
+                    </article>
+
+                    <article class="books-others__card" data-carousel-items>
+                        <img loading="lazy" src="images/livros/algoritmos.jpg"
+                            alt="capa do livro Algoritmos e Lógica de Programação - Marco A. Furlan de Souza e + 3"
+                            class="books-others__card__img">
+
+                        <div class="books-others__card__content">
+                            <h3 class="h3">Algoritmos e Lógica de Programação </h3>
+                            <p>por <strong>Marco A. Furlan de Souza e + 3 autores</strong></p>
+                            <div class="books__card__description sm-sr-only">
+                                <p>
+                                    Com linguagem simples e didática – sem, no entanto, fugir da complexidade do assunto
+                                    –, o livro procura tornar prática a lógica de programação, além de mostrar aos
+                                    estudantes um caminho mais adequado na construção dos algoritmos. O desenvolvimento
+                                    do raciocínio lógico e da abstração de procedimentos e dados são as maiores
+                                    dificuldades para os estudantes dos cursos introdutórios. Nesse sentido, os autores
+                                    resolvem os problemas propostos passo a passo, apresentando todos os conceitos
+                                    envolvidos por meio de fluxogramas e em conjunto com pseudocódigos.</p>
+
+                            </div>
+                            <a href="https://amzn.to/4bEwQ31" class="btn">Comprar Agora</a>
+                        </div>
+                    </article>
+
+                    <article class="books-others__card" data-carousel-items>
+                        <img loading="lazy" src="images/livros/Logica-Programacao-com-Javascript.jpg"
+                            alt="capa do livro Lógica de Programação e Algoritmos com JavaScript - Edécio Fernando Iepsen"
+                            class="books-others__card__img">
+
+                        <div class="books-others__card__content">
+                            <h3 class="h3">Lógica de Programação e Algoritmos com JavaScript </h3>
+                            <p>por <strong>Edécio Fernando Iepsen</strong></p>
+                            <div class="books__card__description sm-sr-only">
+                                <p>
+                                    Uma Introdução à Programação de Computadores com Exemplos e Exercícios</p>
+                                <p>
+                                    Os conteúdos abordados em Lógica de Programação e Algoritmos são fundamentais a
+                                    todos aqueles que desejam ingressar no universo da Programação de Computadores.
+                                    Esses conteúdos, no geral, impõem algumas dificuldades aos iniciantes. Neste livro,
+                                    o autor utiliza sua experiência de mais de 15 anos em lecionar a disciplina de
+                                    Algoritmos em cursos de graduação, para trabalhar o assunto passo a passo. Cada
+                                    capítulo foi cuidadosamente planejado a fim de evitar a sobrecarga de informações ao
+                                    leitor, com exemplos e exercícios de fixação para cada assunto.
+                                    Os exemplos e exercícios são desenvolvidos em JavaScript, linguagem amplamente
+                                    utilizada no desenvolvimento de páginas para a internet. Rodar os programas
+                                    JavaScript não exige nenhum software adicional; é preciso apenas abrir a página em
+                                    seu navegador favorito.
+                                </p>
+
+                            </div>
+                            <a href="https://amzn.to/41FqD2f" class="btn">Comprar Agora</a>
+                        </div>
+                    </article>
+
+                    <article class="books-others__card" data-carousel-items>
+                        <img loading="lazy" src="images/livros/entendendo-algoritmos.jpg"
+                            alt="capa do livro Entendendo Algoritmos: Um Guia Ilustrado Para Programadores e Outros Curiosos - Aditya Y. Bhargava"
+                            class="books-others__card__img">
+
+                        <div class="books-others__card__content">
+                            <h3 class="h3">Entendendo Algoritmos
+                            </h3>
+                            <p>por <strong>Aditya Y. Bhargava</strong></p>
+                            <div class="books__card__description sm-sr-only">
+                                <p>
+                                    Um guia ilustrado para programadores e outros curiosos.</p>
+                                <p>
+                                    Um algoritmo nada mais é do que um procedimento passo a passo para a resolução de um
+                                    problema. Os algoritmos que você mais utilizará como um programador já foram
+                                    descobertos, testados e provados. Se você quer entendê-los, mas se recusa a estudar
+                                    páginas e mais páginas de provas, este é o livro certo. Este guia cativante e
+                                    completamente ilustrado torna simples aprender como utilizar os principais
+                                    algoritmos nos seus programas.
+                                </p>
+
+                                <p>
+                                    O livro Entendendo Algoritmos apresenta uma abordagem agradável para esse tópico
+                                    essencial da ciência da computação. Nele, você aprenderá como aplicar algoritmos
+                                    comuns nos problemas de programação enfrentados diariamente. Você começará com
+                                    tarefas básicas como a ordenação e a pesquisa. Com a prática, você enfrentará
+                                    problemas mais complexos, como a compressão de dados e a inteligência artificial.
+                                    Cada exemplo é apresentado em detalhes e inclui diagramas e códigos completos em
+                                    Python. Ao final deste livro, você terá dominado algoritmos amplamente aplicáveis e
+                                    saberá quando e onde utilizá-los.
+                                </p>
+
+                            </div>
+                            <a href="https://amzn.to/4iHY3Em" class="btn">Comprar Agora</a>
+                        </div>
+                    </article>
+                </div>
+                <button class="carousel-btn next sm-hide lg-show" data-carousel-next>
+                    <img src="images/arrow-carousel.png" alt="seta icon carrossel">
+                </button>
+            </div>
+            <div class="carousel-indicators" id="book-others-indicators"></div>
+
+            <a href="http://amazon.com.br/shop/serliv" class="btn btn--ghost btn--center">Ver mais Produtos</a>
+        </section>
+
+    </main>
+
+    <footer class="footer" id="socialmedia">
+
+        <div class="container">
+
+            <img src="images/logo-serliv.svg" alt="Serliv logotipo" class="footer__logo">
+
+            <p>Entre em contato conosco através de nossas redes sociais</p>
+
+            <ul class="footer__socialLinks">
+                <li><a href="http://www.linkedin.com/in/serliv"> <img src="images/mdi_linkedin.svg" alt=""> <span
+                            class="sr-only">Linkedin</span></a>
+                </li>
+                <li><a href="https://www.youtube.com/@serliv"> <img src="images/mdi_youtube.svg" alt=""> <span
+                            class="sr-only">Youtube</span></a></li>
+                <li><a href="https://www.instagram.com/serlivcursos/"> <img src="images/mdi_instagram.svg" alt=""><span
+                            class="sr-only">Instagram </span></a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+
+    <script src="js/depoimentos.js"></script>
+    <script src="js/carousel.js"></script>
+    <script src="js/heroParallax.js"></script>
+
+    <script>
+        document.body.classList.replace("no-js", "js")
+
+        setupTestimonials({ wrapper: ".testimonials__carousel__wrapper", items: "img" })
+        new Carousel(".books-others__carousel").init()
+        setupHeroParallax(".hero")
+
+    </script>
 
 </body>
 

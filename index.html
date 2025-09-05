@@ -27,7 +27,13 @@
         href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
         rel="stylesheet">
 
-    <link rel="stylesheet" href="styles/estilo.css">
+    <!-- <link rel="stylesheet" href="styles/estilo.css"> -->
+    <link rel="preload" href="./styles/estilo-aboveTheFold.css" as="style">
+    <link rel="stylesheet" href="./styles/estilo-aboveTheFold.css">
+    <link rel="preload" href="./styles/estilo.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript>
+        <link rel="stylesheet" href="./styles/estilo.css">
+    </noscript>
 
     <link rel="icon" href="/favicon.svg" type="image/svg+xml">
 </head>
@@ -76,7 +82,12 @@
             </div>
             <div class="courses__list">
                 <article class="courses__card">
-                    <img loading="lazy" src="images/cursos/curso-web-fundamentos.png" alt="" class="courses__card__img">
+
+                    <picture>
+                        <source type="image/webp" srcset="images/cursos/curso-web-fundamentos.webp">
+                        <img loading="lazy" src="images/cursos/curso-web-fundamentos.png" alt=""
+                            class="courses__card__img" width="424" height="240">
+                    </picture>
 
                     <div class="courses__card__content">
                         <h3 class="h3">Web Fundamentos Front-end <span class="title--thin">HTML + CSS +
@@ -95,7 +106,13 @@
                 </article>
 
                 <article class="courses__card">
-                    <img loading="lazy" src="images/cursos/curso-figma-html-css.png" alt="" class="courses__card__img">
+
+                    <picture>
+                        <source type="image/webp" srcset="images/cursos/curso-figma-html-css.webp">
+                        <img loading="lazy" src="images/cursos/curso-figma-html-css.png" alt=""
+                            class="courses__card__img" width="424" height="240">
+                    </picture>
+
 
                     <div class="courses__card__content">
 
@@ -114,8 +131,11 @@
                     </div>
                 </article>
                 <article class="courses__card">
-                    <img loading="lazy" src="images/cursos/curso-logica-javascript.png" alt=""
-                        class="courses__card__img">
+                    <picture>
+                        <source type="image/webp" srcset="images/cursos/curso-logica-javascript.webp">
+                        <img loading="lazy" src="images/cursos/curso-logica-javascript.png" alt=""
+                            class="courses__card__img" width="424" height="240">
+                    </picture>
 
                     <div class="courses__card__content">
                         <h3></h3>

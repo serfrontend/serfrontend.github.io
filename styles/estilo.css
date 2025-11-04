@@ -516,3 +516,92 @@
 
 
 }
+
+html:has(dialog[open]) {
+    overflow: hidden;
+}
+
+html {
+    scrollbar-gutter: stable;
+}
+
+.cupom-dialog::backdrop {
+    background: var(--page-bg);
+    backdrop-filter: blur(2px);
+    opacity: .8;
+}
+
+.cupom-dialog a {
+    text-decoration: underline;
+    color: #ff5252;
+}
+
+.cupom-dialog {
+    width: 90%;
+    max-width: 860px;
+    background: var(--page-bg);
+    color: var(--text-color);
+    border: 2px solid var(--primary-color);
+    border-radius: 1rem;
+    padding: 2rem;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.cupom-dialog h3 {
+    margin-top: 0;
+    color: #ff5252;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+.cupom-dialog img {
+    margin-top: var(--grid-gap);
+    display: block;
+    width: 100%;
+}
+
+.cupom-dialog p {
+    line-height: 1.5;
+}
+
+.cupom-dialog .alerta {
+    background: #2b2b2b;
+    padding: 0.75rem;
+    border-radius: 0.5rem;
+    margin: 1rem 0;
+    color: #ffc107;
+    font-weight: 500;
+}
+
+.cupom-dialog .nao-mostrar {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.9rem;
+    color: #ccc;
+}
+
+.cupom-dialog .acoes {
+    margin-top: 1.5rem;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.cupom-dialog .continuar {
+    background: var(--primary-color);
+    border: none;
+    color: var(--text-color);
+    font-weight: bold;
+    border-radius: 0.5rem;
+    padding: 0.75rem 1.5rem;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.cupom-dialog .continuar:hover {
+    background: #ff5252;
+}

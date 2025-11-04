@@ -99,7 +99,10 @@
                             <a href="https://www.udemy.com/course/curso-web-design-fundamentos-aprenda-html-css-e-javascript/?referralCode=B36B674DD7452AB44C7A&couponCode=CP-DESC-20251030"
                                 class="btn btn--stroke">Ver Conteúdo</a>
                             <a href="https://www.udemy.com/payment/checkout/express/course/1616938/?discountCode=CP-DESC-20251030"
-                                class="btn">Quero Comprar</a>
+                                class="btn" data-modal-cupom data-modal-title="Web Fundamentos Front-end: HTML + CSS +
+                                Javascript"
+                                data-modal-product-url="https://www.udemy.com/course/curso-web-design-fundamentos-aprenda-html-css-e-javascript/?referralCode=B36B674DD7452AB44C7A&couponCode=CP-DESC-20251030">Quero
+                                Comprar</a>
                         </div>
                     </div>
                 </article>
@@ -123,7 +126,10 @@
                             <a href="https://www.udemy.com/course/design-e-planejamento-web-para-sites-de-alto-nivel/?referralCode=3C33D18BA1C270B373F9&couponCode=CP-DESC-20251030"
                                 class="btn btn--stroke">Ver Conteúdo</a>
                             <a href="https://www.udemy.com/payment/checkout/express/course/6804285/?discountCode=CP-DESC-20251030"
-                                class="btn">Quero Comprar</a>
+                                class="btn" data-modal-cupom data-modal-title="Design e Planejamento Web Para sites de alto
+                                impacto"
+                                data-modal-product-url="https://www.udemy.com/course/design-e-planejamento-web-para-sites-de-alto-nivel/?referralCode=3C33D18BA1C270B373F9&couponCode=CP-DESC-20251030">Quero
+                                Comprar</a>
                         </div>
 
 
@@ -151,7 +157,11 @@
                             <a href="https://www.udemy.com/course/curso-do-figma-ao-codigo-o-design-da-interface-web-completo/?referralCode=AA0F15781CD612D52A6D&couponCode=CP-DESC-20251030"
                                 class="btn btn--stroke">Ver Conteúdo</a>
                             <a href="https://www.udemy.com/payment/checkout/express/course/4747076/?discountCode=CP-DESC-20251030"
-                                class="btn">Quero Comprar</a>
+                                class="btn" data-modal-cupom data-modal-title="Do Figma ao código HTML e CSS O Design de Interfaces
+                                web
+                                completo"
+                                data-modal-product-url="https://www.udemy.com/course/curso-do-figma-ao-codigo-o-design-da-interface-web-completo/?referralCode=AA0F15781CD612D52A6D&couponCode=CP-DESC-20251030">Quero
+                                Comprar</a>
                         </div>
                     </div>
                 </article>
@@ -174,11 +184,42 @@
                             <a href="https://www.udemy.com/course/logica-de-programacao-com-javascript-iniciando-no-frontend/?referralCode=90E65511BF3E1196B084&couponCode=CP-DESC-20251030"
                                 class="btn btn--stroke">Ver Conteúdo</a>
                             <a href="https://www.udemy.com/payment/checkout/express/course/1337284/?discountCode=CP-DESC-20251030"
-                                class="btn">Quero Comprar</a>
+                                class="btn" data-modal-cupom data-modal-title="Lógica de Programação com JavaScript com Fundamentos de
+                                Estrutura de Dados"
+                                data-modal-product-url="https://www.udemy.com/course/logica-de-programacao-com-javascript-iniciando-no-frontend/?referralCode=90E65511BF3E1196B084&couponCode=CP-DESC-20251030">
+                                Quero Comprar</a>
                         </div>
                     </div>
                 </article>
             </div>
+            <dialog id="cupomModal" class="cupom-dialog" closedby="any">
+                <form method="dialog">
+                    <h3>Antes de continuar... 👇</h3>
+                    <p>
+                        Se ainda não tiver uma conta na <strong>Udemy</strong>, <a id="crie-conta-udemy"
+                            href="https://www.udemy.com/join/signup-popup/" target="_blank">crie uma
+                            antes de finalizar a compra</a>.</p>
+                    <p>
+                        Verifique também se o <strong>cupom do instrutor <i> CP-DESC-20251030 </i> está
+                            aplicado</strong>. Isso garante
+                        que você
+                        pagará o valor promocional e que o instrutor receba sua comissão corretamente.
+                    </p>
+                    <img src="images/cupom-udemy-aplicado.png"
+                        alt="Certifique-se de que o texto 'Código do Instrutor' foi aplicado antes de efetuar a compra no site da Udemy">
+                    <p class="alerta">
+                        ⚠️ O preço pode variar se você acessar diretamente pelo site da Udemy.
+                    </p>
+                    <label class="nao-mostrar">
+                        <input type="checkbox" id="naoMostrar" data-modal-checkbox> Não mostrar esta mensagem novamente
+                    </label>
+
+                    <div class="acoes">
+                        <!-- <button id="continuarBtn" class="continuar">Entendi, continuar</button> -->
+                        <a href="" id="continarCompra" class="continuar">Já tenho uma conta na Udemy. Quero comprar</a>
+                    </div>
+                </form>
+            </dialog>
         </section>
 
         <section class="testimonials">
@@ -541,6 +582,7 @@
     <script src="js/depoimentos.js"></script>
     <script src="js/carousel.js"></script>
     <script src="js/heroParallax.js"></script>
+    <script src="js/modal.js"></script>
 
     <script>
         document.body.classList.replace("no-js", "js")
@@ -548,6 +590,7 @@
         setupTestimonials({ wrapper: ".testimonials__carousel__wrapper", items: "img" })
         new Carousel(".books-others__carousel").init()
         setupHeroParallax(".hero")
+        setupModal("[data-modal-cupom]", "#cupomModal")
 
     </script>
 

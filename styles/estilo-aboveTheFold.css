@@ -95,6 +95,7 @@ img {
         padding: .75rem;
         display: inline-block;
         border-bottom: 1px solid transparent;
+        font-weight: bold;
 
         &:hover {
             border-bottom: 1px solid var(--primary-color);
@@ -103,14 +104,14 @@ img {
 }
 
 .nav-menu :target-current {
-    color: red;
+    color: #ee3231;
     anchor-name: --current-link;
 }
 
 .menu-active-bar {
     height: 4px;
     width: anchor-size(width);
-    background-color: var(--primary-color);
+    background-color: #ee3231;
 
     position-anchor: --current-link;
     position: absolute;
@@ -201,7 +202,9 @@ main>* {
     text-align: center;
 }
 
-p {
+p,
+li,
+a {
     font-size: var(--text-size);
 }
 

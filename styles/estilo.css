@@ -65,6 +65,10 @@
     font-weight: 900;
 }
 
+.carousel-indicators {
+    display: none;
+}
+
 .news {
     background-color: var(--primary-color);
     background-image: url(../images/bg-news-mob.jpg);
@@ -94,9 +98,7 @@
 
 #channels {
     transform: translateY(calc(var(--section-distance-top) * -1.5));
-    position: absolute;
-    top: 0;
-    left: 0;
+
 }
 
 /* .news__seta {
@@ -308,6 +310,9 @@
 
     #channels {
         transform: translateY(-15rem);
+        position: absolute;
+        top: 0;
+        left: 0;
     }
 
     .books-others__card {

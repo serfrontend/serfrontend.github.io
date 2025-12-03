@@ -548,7 +548,11 @@ main {
         *::-webkit-scrollbar {
             height: .5rem;
         }
+    }
 
+    .container-max-width {
+        margin-left: auto;
+        margin-right: auto;
     }
 
     .header {

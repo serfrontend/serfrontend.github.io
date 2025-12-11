@@ -39,9 +39,6 @@ class HamburguerMenu {
         });
 
         document.addEventListener('click', (e) => {
-            console.log(e.target);
-            console.log(!this.menuButton.contains(e.target))
-            console.log(!this.navMenu.contains(e.target))
             // Se o menu está aberto e o clique não foi no botão ou no menu
             if (this.isOpen &&
                 this.navMenu === e.target) {
@@ -106,8 +103,4 @@ class HamburguerMenu {
     }
 
 }
-
-document.addEventListener('DOMContentLoaded', () => {
-    new HamburguerMenu();
-});
 

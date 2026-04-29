@@ -105,58 +105,7 @@
     display: none;
 } */
 
-.books-others {
-    display: flex;
-    flex-direction: column;
-    gap: var(--subsection-distance-gap)
-}
 
-.books-others__wrapper {
-    display: flex;
-    flex-wrap: nowrap;
-    overflow-x: scroll;
-    padding-bottom: 1rem;
-    padding-right: var(--grid-gap);
-    scroll-snap-type: x mandatory;
-}
-
-.books-others__card {
-    margin-left: var(--grid-gap);
-    width: calc(100% - var(--grid-margin) * 2);
-    flex: 0 0 calc(100% - var(--grid-margin) * 2);
-    scroll-snap-align: center;
-
-    display: flex;
-    gap: var(--grid-gap);
-
-    &:first-child {
-        margin-left: var(--grid-margin);
-    }
-
-    &:last-child {
-        margin-right: var(--grid-margin);
-    }
-}
-
-.books-others__card__img {
-    width: 32%;
-}
-
-.books-others__card__content {
-    display: flex;
-    flex-direction: column;
-    gap: var(--grid-gap);
-    text-align: left;
-
-    .btn {
-        margin-top: auto;
-        align-self: start;
-    }
-
-    .h3 {
-        text-align: left;
-    }
-}
 
 
 .footer {
@@ -315,15 +264,6 @@
         left: 0;
     }
 
-    .books-others__card {
-        align-items: start;
-        padding-right: var(--grid-margin);
-    }
-
-    .books-others__card__img {
-        width: auto;
-    }
-
     .books__card__description {
         display: -webkit-box;
         -webkit-line-clamp: 5;
@@ -331,35 +271,6 @@
         text-overflow: ellipsis;
         -webkit-box-orient: vertical;
 
-    }
-
-
-    .books-others__card,
-    .books-others__card:first-child {
-        margin: 0;
-        padding-left: var(--grid-margin);
-        padding-right: 0;
-    }
-
-    .books-others__card {
-        scroll-snap-align: start;
-        display: grid;
-        grid-template-columns: repeat(8, 1fr);
-        gap: var(--grid-gap);
-    }
-
-    .books-others__card__img {
-        grid-column: 1 / 3;
-        width: 100%;
-    }
-
-    .books-others__card__content {
-        grid-column: 3 / -2;
-    }
-
-
-    .books-others__wrapper {
-        padding-right: 0;
     }
 
     .footer {
@@ -437,19 +348,6 @@
         }
     }
 
-    .books-others__card {
-        display: grid;
-        grid-template-columns: repeat(12, 1fr);
-    }
-
-    .books-others__card__img {
-        grid-column: 2 / 4;
-    }
-
-    .books-others__card__content {
-        grid-column: 4 / -2;
-    }
-
     .footer .container {
         width: 32.31%;
     }
@@ -498,22 +396,6 @@
         &:hover,
         &:focus-within {
             animation-play-state: paused;
-        }
-    }
-
-    .books-others__carousel {
-        position: relative;
-    }
-
-    .js {
-        .books-others__wrapper {
-            overflow: hidden;
-            --currentIndex: 0;
-        }
-
-        .books-others__card {
-            transition: transform .3s ease-in-out;
-            transform: translateX(calc(var(--currentIndex) * -100%));
         }
     }
 

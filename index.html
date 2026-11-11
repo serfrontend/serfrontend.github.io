@@ -82,13 +82,38 @@
             <div class="container container-max-width">
                 <h1 class="hero__title">O Melhor Lugar para iniciar sua jornada na <span
                         class="hero__title--upper">Programação <span class="no-wrap">Front-end</span></span></h1>
-                <div><a href="#courses" class="btn hero__cta">Conheça nossos cursos</a></div>
+                <div style="    display: flex; justify-content: center; gap: 1rem; align-items: center;">
+                    <a href="#courses" class="btn hero__cta">Conheça nossos cursos</a>
+                    <button type="button" class="btn promo-trigger" id="promo-trigger" aria-haspopup="dialog" hidden>
+                        Ver promoção Pré-Black Friday
+                    </button>
+                </div>
             </div>
         </section>
 
+        <dialog class="promo-dialog" id="promo-dialog" aria-labelledby="promo-title" closedby="any">
+            <form method="dialog">
+                <button type="submit" class="promo-dialog__close" aria-label="Fechar promoção" autofocus>×</button>
+            </form>
+            <h2 id="promo-title">Pré-Black Friday Serliv</h2>
+            <p class="promo-dialog__offer">Todos os cursos Serliv na Udemy a partir de <strong>R$ 24,90</strong></p>
+            <p class="promo-dialog__dates">
+                Cupom válido de <time datetime="2026-11-11T11:11:00-03:00">11/11/2026 às 11h11</time> a
+                <time datetime="2026-11-16T11:11:00-03:00">16/11/2026 às 11h11</time> (horário de Brasília).
+            </p>
+            <label for="promo-code">Cupom</label>
+            <div class="promo-dialog__coupon">
+                <input id="promo-code" type="text" value="11-11-26" readonly>
+                <button type="button" id="promo-copy">Copiar cupom</button>
+            </div>
+            <p class="promo-dialog__status" id="promo-status" role="status"></p>
+            <p>Cole o código na página de compra da Udemy.</p>
+            <a href="#courses" class="btn" id="promo-courses">Ver cursos</a>
+        </dialog>
+
         <section class="courses container container-max-width" id="courses">
             <div class="courses__title">
-                <h2 class="h2">Os Melhores Cursos <span class="title--thin"> Você Encontra Aqui</span></h2>
+                <h2 class="h2" tabindex="-1">Os Melhores Cursos <span class="title--thin"> Você Encontra Aqui</span></h2>
             </div>
             <div class="courses__list">
 
@@ -235,7 +260,7 @@
                             href="https://www.udemy.com/join/signup-popup/" target="_blank">crie uma
                             antes de finalizar a compra</a>.</p>
                     <p>
-                        Verifique também se o <strong>cupom do instrutor <i> CP-DESC-20261105 </i> está
+                        Verifique também se o <strong>cupom do instrutor <i id="cupom-udemy">CP-DESC-20261105</i> está
                             aplicado</strong>. Isso garante
                         que você
                         pagará o valor promocional e que o instrutor receba sua comissão corretamente.
@@ -449,6 +474,7 @@
     <script src="js/carousel.js"></script>
     <script src="js/heroParallax.js"></script>
     <script src="js/modal.js"></script>
+    <script src="js/promo.js" defer></script>
 
     <script>
         document.body.classList.replace("no-js", "js")
